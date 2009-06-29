@@ -1,5 +1,5 @@
 category: Text
-requires: cygwin libgcc1 libgmp3 libpcre0 libraptor1
+requires: libgcc1 libgmp3 libpcre0 libraptor1
 external-source: rasqal
 sdesc: "RDF query library (runtime)"
 ldesc: "Rasqal is a free software / Open Source C library that handles 
