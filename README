@@ -6,25 +6,25 @@ execution returning result bindings. The supported query languages are
 SPARQL and RDQL.
 
 Runtime requirements:
-  cygwin-1.7.0-48
-  libgcc1-4.3.2-2
-  libgmp3-4.3.1-1
-  libpcre0-7.9-1
-  libraptor1-1.4.18-10
+  cygwin-1.7.5-1
+  libgcc1-4.3.4-3
+  libgmp3-4.3.1-3
+  libpcre0-8.00-1
+  libraptor1-1.4.21-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  autoconf2.5-2.63-10
-  automake1.10-1.10.1-10
-  binutils-20080624-2
-  bison-2.3-1
-  cygport-0.9.6-1
+  autoconf2.5-2.65-1
+  automake1.11-1.11.1-1
+  binutils-2.20.51-2
+  bison-2.4.2-1
+  cygport-0.9.83-1
   flex-2.5.35-1
-  gawk-3.1.6-1
-  gcc4-core-4.3.2-2
-  gnome-common-2.26.0-1
-  gtk-doc-1.11-2
-  libtool-2.2.7a-12
+  gawk-3.1.7-1
+  gcc4-core-4.3.4-3
+  gnome-common-2.28.0-1
+  gtk-doc-1.13-1
+  libtool-2.2.7a-15
   make-3.81-2
   pkg-config-0.23b-10
   sed-4.1.5-2
@@ -38,73 +38,24 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack rasqal-0.9.16-X-src.tar.bz2
+  unpack rasqal-0.9.19-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./rasqal-0.9.16-X.cygport all
+  cygport ./rasqal-0.9.19-X.cygport all
 
 This will create:
-  /usr/src/librasqal-devel-0.9.16-X.tar.bz2
-  /usr/src/librasqal1-0.9.16-X.tar.bz2
-  /usr/src/rasqal-0.9.16-X-src.tar.bz2
-  /usr/src/rasqal-0.9.16-X.tar.bz2
+  /usr/src/librasqal-devel-0.9.19-X.tar.bz2
+  /usr/src/librasqal2-0.9.19-X.tar.bz2
+  /usr/src/rasqal-0.9.19-X-src.tar.bz2
+  /usr/src/rasqal-0.9.19-X.tar.bz2
 
 -------------------------------------------
 
-Files included in the binary packages:
-
-(rasqal)
-  /usr/bin/roqet.exe
-  /usr/share/doc/rasqal/AUTHORS
-  /usr/share/doc/rasqal/COPYING
-  /usr/share/doc/rasqal/COPYING.LIB
-  /usr/share/doc/rasqal/ChangeLog
-  /usr/share/doc/rasqal/LICENSE.txt
-  /usr/share/doc/rasqal/NEWS
-  /usr/share/doc/rasqal/README
-  /usr/share/man/man1/roqet.1.gz
-
-(librasqal1)
-  /usr/bin/cygrasqal-1.dll
-
-(librasqal-config)
-  /usr/bin/rasqal-config
-  /usr/include/rasqal/rasqal.h
-  /usr/lib/librasqal.dll.a
-  /usr/lib/librasqal.la
-  /usr/lib/pkgconfig/rasqal.pc
-  /usr/share/gtk-doc/html/rasqal/home.png
-  /usr/share/gtk-doc/html/rasqal/index.html
-  /usr/share/gtk-doc/html/rasqal/index.sgml
-  /usr/share/gtk-doc/html/rasqal/ix01.html
-  /usr/share/gtk-doc/html/rasqal/left.png
-  /usr/share/gtk-doc/html/rasqal/pt01.html
-  /usr/share/gtk-doc/html/rasqal/rasqal-section-data.html
-  /usr/share/gtk-doc/html/rasqal/rasqal-section-expression.html
-  /usr/share/gtk-doc/html/rasqal/rasqal-section-general.html
-  /usr/share/gtk-doc/html/rasqal/rasqal-section-graph-pattern.html
-  /usr/share/gtk-doc/html/rasqal/rasqal-section-literal.html
-  /usr/share/gtk-doc/html/rasqal/rasqal-section-prefix.html
-  /usr/share/gtk-doc/html/rasqal/rasqal-section-query-results-formatter.html
-  /usr/share/gtk-doc/html/rasqal/rasqal-section-query-results.html
-  /usr/share/gtk-doc/html/rasqal/rasqal-section-query.html
-  /usr/share/gtk-doc/html/rasqal/rasqal-section-triple.html
-  /usr/share/gtk-doc/html/rasqal/rasqal-section-triples-source.html
-  /usr/share/gtk-doc/html/rasqal/rasqal-section-variable.html
-  /usr/share/gtk-doc/html/rasqal/rasqal-section-xsd.html
-  /usr/share/gtk-doc/html/rasqal/rasqal.devhelp
-  /usr/share/gtk-doc/html/rasqal/rasqal.devhelp2
-  /usr/share/gtk-doc/html/rasqal/rasqal.html
-  /usr/share/gtk-doc/html/rasqal/right.png
-  /usr/share/gtk-doc/html/rasqal/style.css
-  /usr/share/gtk-doc/html/rasqal/up.png
-  /usr/share/man/man1/rasqal-config.1.gz
-  /usr/share/man/man3/librasqal.3.gz
-
-------------------
-
 Port Notes:
+
+----- version 0.9.19-1 -----
+Version bump.
 
 ----- version 0.9.16-10 -----
 Initial release for Cygwin 1.7.
