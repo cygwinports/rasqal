@@ -1,5 +1,5 @@
 category: Text
-requires: librasqal2 libgmp-devel libpcre-devel libraptor-devel
+requires: librasqal3 libmpfr-devel libpcre-devel libraptor2-devel
 external-source: rasqal
 sdesc: "RDF query library (libdevel)"
 ldesc: "Rasqal is a free software / Open Source C library that handles 
