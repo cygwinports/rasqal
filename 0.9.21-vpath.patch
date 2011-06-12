@@ -1,0 +1,13 @@
+--- origsrc/rasqal-0.9.21/docs/Makefile.am	2010-12-04 02:20:28.000000000 -0600
++++ src/rasqal-0.9.21/docs/Makefile.am	2011-06-12 03:16:07.940096700 -0500
+@@ -117,7 +117,7 @@ $(top_builddir)/src/rasqal.h:
+ README: README.html
+ 	$(LYNX) $(LYNXARGS) $< > $@
+ 
+-rasqal-fake.i: $(top_srcdir)/src/rasqal.h $(srcdir)/../scripts/fix-gtkdoc-header.pl
+-	$(PERL) $(srcdir)/../scripts/fix-gtkdoc-header.pl < $< > $@
+-
+ endif
++
++$(srcdir)/rasqal-fake.i: $(top_builddir)/src/rasqal.h $(srcdir)/../scripts/fix-gtkdoc-header.pl
++	$(PERL) $(srcdir)/../scripts/fix-gtkdoc-header.pl < $< > $@

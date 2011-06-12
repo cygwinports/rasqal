@@ -3,7 +3,9 @@ inherit gnome2  # for gtk-doc
 DESCRIPTION="RDF query library"
 HOMEPAGE="http://librdf.org/rasqal/"
 SRC_URI="http://download.librdf.org/source/${P}.tar.gz"
-PATCH_URI="0.9.16-no-undefined.patch"
+
+PATCH_URI="0.9.16-no-undefined.patch
+           0.9.21-vpath.patch"
 
 PKG_NAMES="${PN} lib${PN}2 lib${PN}-devel"
 rasqal_CONTENTS="usr/bin/*.exe usr/share/doc/ usr/share/man/man1/roqet.*"
@@ -11,10 +13,12 @@ librasqal2_CONTENTS="usr/bin/cyg${PN}-2.dll"
 librasqal_devel_CONTENTS="--exclude=roqet.* usr/bin/*-config usr/include usr/lib/
                           usr/share/gtk-doc/ usr/share/man/"
 
+DIFF_EXCLUDES="rasqal-fake.i"
+
 CYGCONF_ARGS="
 	--enable-pcre
 	--enable-xml2
-	--with-decimal=gmp
+	--with-decimal=mpfr
 	--with-raptor=system
 	--with-regex-library=pcre
 "
