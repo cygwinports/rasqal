@@ -1,5 +1,5 @@
 category: Text
-requires: libmpfr1 libpcre0 libraptor1
+requires: libmpfr1 libpcre0 libraptor2_0
 external-source: rasqal
 sdesc: "RDF query library (runtime)"
 ldesc: "Rasqal is a free software / Open Source C library that handles 

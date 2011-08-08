@@ -1,9 +1,9 @@
 --- origsrc/rasqal-0.9.16/src/Makefile.am	2008-06-30 01:13:52.000000000 -0500
 +++ src/rasqal-0.9.16/src/Makefile.am	2008-07-20 16:32:58.703125000 -0500
 @@ -74,7 +74,7 @@
- if STRCASECMP
- librasqal_la_SOURCES += strcasecmp.c
+ librasqal_la_SOURCES += rasqal_digest_md5.c rasqal_digest_sha1.c
  endif
+ 
 -librasqal_la_LDFLAGS = -version-info @RASQAL_LIBTOOL_VERSION@
 +librasqal_la_LDFLAGS = -version-info @RASQAL_LIBTOOL_VERSION@ -no-undefined
  librasqal_la_LIBADD = @LTLIBOBJS@ @RASQAL_INTERNAL_LIBS@ @RASQAL_EXTERNAL_LIBS@ $(MEM_LIBS)
