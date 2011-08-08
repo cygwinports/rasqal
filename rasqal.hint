@@ -1,5 +1,5 @@
 category: Text
-requires: libraptor1 librasqal2
+requires: libraptor2_0 librasqal3
 sdesc: "RDF query library (app)"
 ldesc: "Rasqal is a free software / Open Source C library that handles 
 Resource Description Framework (RDF) query syntaxes, query construction 
