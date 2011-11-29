@@ -1,0 +1,11 @@
+--- origsrc/rasqal-0.9.28/docs/Makefile.am	2011-11-17 00:03:57.000000000 -0600
++++ src/rasqal-0.9.28/docs/Makefile.am	2011-11-29 00:33:19.654189400 -0600
+@@ -104,7 +104,7 @@ rasqal-changes.tsv
+ DISTCLEANFILES += \
+ rasqal-fake.h
+ 
+-$(builddir)/rasqal-fake.h: $(top_srcdir)/src/rasqal.h $(srcdir)/../scripts/fix-gtkdoc-header.pl
++$(builddir)/rasqal-fake.h: $(top_builddir)/src/rasqal.h $(srcdir)/../scripts/fix-gtkdoc-header.pl
+ 	$(PERL) $(srcdir)/../scripts/fix-gtkdoc-header.pl < $< > $@
+ 
+ # Create some text files from HTML sources
