@@ -1,5 +1,5 @@
 category: Text
-requires: libmpfr4 libpcre0 libraptor2_0
+requires: libgcrypt11 libmpfr4 libpcre1 libraptor2_0 libuuid1
 external-source: rasqal
 sdesc: "RDF query library (runtime)"
 ldesc: "Rasqal is a free software / Open Source C library that handles 

@@ -1,5 +1,5 @@
 category: Text
-requires: librasqal3 libmpfr-devel libpcre-devel libraptor2-devel
+requires: librasqal3 libgcrypt-devel libmpfr-devel libpcre-devel libraptor2-devel libuuid-devel
 external-source: rasqal
 sdesc: "RDF query library (libdevel)"
 ldesc: "Rasqal is a free software / Open Source C library that handles 
