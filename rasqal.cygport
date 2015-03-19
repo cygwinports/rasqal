@@ -2,7 +2,7 @@ inherit gnome2  # for gtk-doc
 
 NAME="rasqal"
 VERSION=0.9.32
-RELEASE=1
+RELEASE=2
 CATEGORY="Libs"
 SUMMARY="RDF query library"
 DESCRIPTION="Rasqal is a free software / Open Source C library that handles
